@@ -1,0 +1,10 @@
+---
+version: '3.8'
+services:
+  inkscape-faas:
+    build: .
+    image: reg.growlab.digital/inkscape:faas
+    ports:
+      - 9000:8080
+    volumes:
+      - ./tests:/home/inkscape/
