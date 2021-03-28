@@ -1,0 +1,3 @@
+[submodule "s3-uploader"]
+	path = s3-uploader
+	url = git@github.com:torresmvl/s3-uploader.git
