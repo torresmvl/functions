@@ -1,0 +1,8 @@
+---
+version: '3.8'
+services:
+  drill:
+    build: .
+    image: reg.growlab.digital/drill:faas
+    ports:
+      - 8080:8080
