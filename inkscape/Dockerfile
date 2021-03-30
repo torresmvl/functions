@@ -1,5 +1,4 @@
 FROM ghcr.io/openfaas/classic-watchdog:0.1.5 as watchdog
-RUN chmod +x /usr/bin/fwatchdog
 
 FROM alpine:3.12 as inkscape
 
