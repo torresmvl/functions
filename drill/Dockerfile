@@ -2,7 +2,7 @@ FROM ghcr.io/openfaas/classic-watchdog:0.1.5 as watchdog
 
 FROM alpine:3.12 as drill
 
-RUN adduser inkscape -S -D drill
+RUN adduser drill -S -D drill
 RUN apk --update add --no-cache drill
 
 FROM scratch as release
