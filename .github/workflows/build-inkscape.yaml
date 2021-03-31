@@ -1,4 +1,4 @@
-name: CI Inkscape function
+name: CI - inkscape function
 
 on:
   push:
@@ -29,3 +29,5 @@ jobs:
           push: true
           tags: |
             reg.growlab.digital/faas-inkscape:latest
+          cache-from: type=registry,ref=reg.growlab.digital/faas-inkscape:latest
+          cache-to: type=inline
